@@ -1,0 +1,3 @@
+Clean Code
+Effective Java
+Java Concurrency in Practice

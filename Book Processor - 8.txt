@@ -1,0 +1,27 @@
+Problem Statement:
+
+Create a program that processes a list of Book objects, where each Book has a title, author, yearPublished, and price. The program should use Java 8 features including Functional Interfaces and Lambda Expressions, Java Stream API, Collection API improvements, Java IO improvements, and Default & Static Methods in interfaces to perform the following tasks:
+
+Data Initialization:
+
+Read book details from a text file (books.txt). Each line in the file represents a book and has the format: title,author,yearPublished,price.
+Parse the lines to create a list of Book objects.
+Filtering and Sorting:
+
+Use a lambda expression and a functional interface to filter out books published before the year 2000.
+Sort the remaining books by price in ascending order using the Java Stream API.
+Collection API Improvements:
+
+Remove any books with a price less than $10 using the removeIf method.
+Data Processing:
+
+Use the Java Stream API to create a list of book titles (only) from the filtered and sorted list of books.
+Write the titles to a new text file (filtered_books.txt), one title per line.
+Interface with Default & Static Methods:
+
+Define an interface BookOperations with the following methods:
+A default method discountPrice(Book book, double discountPercent) that applies a discount to the book's price and returns the discounted price.
+A static method formatBookDetails(Book book) that returns a formatted string with the book's title, author, yearPublished, and price.
+Create a class BookProcessor that implements BookOperations. Use the default and static methods to:
+Apply a 10% discount to all books and print the new prices.
+Print the formatted details of each book in the filtered list.
